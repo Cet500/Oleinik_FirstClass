@@ -1,0 +1,130 @@
+/* ------------------------------- global ------------------------------- */
+
+/* -------------------- body -------------------- */
+
+.global__body{
+	margin: 0px;
+	padding: 0px;
+	
+	display: grid;
+	grid-template-areas: 'header header header'
+						 'none1  main   none2'
+						 'footer footer footer';
+	grid-template-columns: 1fr 3fr 1fr;
+	grid-template-rows: auto 1fr auto;
+
+	min-height: 100vh;
+
+	font-family: Arial;
+	
+	background: #c4c4c4;
+}
+
+/* -------------------- header -------------------- */
+
+.global__header{
+	grid-area: header;
+
+	display: grid;
+	grid-template-areas: 'none3 logo nav none4';
+	grid-template-columns: 1fr 1fr 2fr 1fr;
+	grid-template-rows: auto;
+
+	text-align: center;
+	position: sticky;
+	top: 0px;
+
+	background: #BEF574;
+	border-bottom: 1px solid #2c2c2c;
+}
+.global__header-logo{
+	grid-area: logo;
+
+	margin: 0px;
+
+	text-decoration: none;
+	font-family: Consolas;
+	font-size: 1.7em;
+	font-style: italic;
+
+	color: #000000;
+}
+
+/* -------------------- nav in header -------------------- */
+
+.global__nav{
+	grid-area: nav;
+}
+.global__nav-list{
+	display: flex;
+
+	height: auto;
+	margin: 0;
+	padding-left: 0;
+
+	list-style: none;
+}
+.global__nav-list-item{
+	border-left: 1px solid #b2b2b2;
+}
+.global__nav-list-item:last-child{
+	border-right: 1px solid #b2b2b2;
+}
+.global__nav-list-item a{
+	display: block;
+
+	padding: 0.5em 1em;
+
+	text-decoration: none;
+
+	color: #000000;
+}
+.global__nav-list-item a:hover{
+	background-color: rgba(0,0,0,0.2);
+}
+
+/* -------------------- main -------------------- */
+
+.global__main{
+	grid-area: main;
+
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.global__main h2{
+	font-family: Consolas;
+	font-style: italic;
+	text-indent: 1em;
+}
+
+/* -------------------- sections in main -------------------- */
+
+.global__main-section{
+	padding: 10px;
+	margin-bottom: 10px;
+
+	border-top-right-radius: 2em;
+	border-bottom-left-radius: 2em;
+
+}
+.global__main-section-content{
+	border: 1px solid #2c2c2c;
+}
+.global__main-section-color{
+	background-color: #b8d68f;
+	border: 1px solid #2c2c2c;
+}
+
+/* -------------------- footer -------------------- */
+
+.global__footer{
+	grid-area: footer;
+
+	text-align: center;
+	font-family: Consolas;
+	font-style: italic;
+
+	background: #BEF574;
+	border-top: 1px solid #2c2c2c;
+}
