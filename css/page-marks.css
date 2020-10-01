@@ -1,0 +1,55 @@
+/* ------------------------------- marks ------------------------------- */
+
+/* -------------------- sections -------------------- */ 
+
+.marks__section{
+	margin-bottom: 15px;
+
+	border-top-right-radius: 2em;
+
+	border: 1px solid #2c2c2c;
+	background-color: #e9ecbf;
+}
+.marks__section h3{
+	margin-top: 7px;
+	margin-bottom: 15px;
+	padding-left: 25px;
+	padding-bottom: 5px;
+
+	border-bottom: 1px dashed #2d2d2d;
+}
+.marks__section-table{
+	margin: 10px;
+
+	border-collapse: collapse;
+}
+.marks__section-table th{
+	padding: 4px 7px;
+
+	background-color: #b8d68f;
+	border: 1px solid #666666;	
+}
+.marks__section-table td{
+	padding: 3px 5px;
+
+	border: 1px solid #666666;
+}
+.marks__section-table td:first-child{
+	font-weight: bold;
+
+	background-color: #b8d68f;
+}
+.marks__section-table tr:hover{
+	background-color: rgba(10, 255, 10, 0.1);
+}
+
+/* -------------------- marks -------------------- */ 
+
+.marks__good{
+	color: green;
+	background-color: rgba(0, 255, 0, 0.1);
+}
+.marks__bad{
+	color: red;
+	background-color: rgba(255, 0, 0, 0.1);
+}
