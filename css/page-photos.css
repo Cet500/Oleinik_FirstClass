@@ -1,0 +1,26 @@
+/* ------------------------------- photos ------------------------------- */
+
+/* -------------------- sections -------------------- */ 
+
+.photos__section{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.photos__section-item{
+	width: 30%;
+
+	margin-bottom: 20px;
+
+	background-color: #b8d68f;
+	border: 1px solid #000000;
+}
+.photos__section-image{
+	width: calc(100% - 20px);
+
+	margin: 10px;
+}
+.photos__section-text{
+	margin: 10px;
+	margin-top: 0px;
+}
