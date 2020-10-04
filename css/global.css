@@ -27,16 +27,21 @@
 	grid-area: header;
 
 	display: grid;
-	grid-template-areas: 'none3 logo nav none4';
-	grid-template-columns: 1fr 1fr 2fr 1fr;
+	grid-template-areas: 'hleft logo nav admin';
+	grid-template-columns: 1fr 1.5fr 2.5fr 1fr;
 	grid-template-rows: auto;
 
 	text-align: center;
 	position: sticky;
 	top: 0px;
 
-	background: #BEF574;
+	background: #bef574;
 	border-bottom: 1px solid #2c2c2c;
+}
+.global__header-left{
+	grid-area: hleft;
+
+	background-color: #9cc962;
 }
 .global__header-logo{
 	grid-area: logo;
@@ -48,6 +53,66 @@
 	font-size: 1.7em;
 	font-style: italic;
 
+	border-left: 1px solid #929292;
+	color: #000000;
+}
+.global__header-admin{
+	grid-area: admin;
+
+	background-color: #9cc962;
+}
+.global__header-admin-menu{
+	display: flex;
+
+	margin: 0px;
+	margin-left: 10px;
+	padding: 0px;
+
+	list-style: none;
+}
+.global__header-admin-menu-item{
+	display: inline-block;
+}
+.global__header-admin-menu-item:hover ul{
+	display: block;
+}
+.global__header-admin-menu-item-text{
+	margin: 0px;
+	padding: 0.5em 1em;
+}
+.global__header-admin-submenu{
+	display: none;
+	position: absolute;
+	z-index: 2;
+
+	margin: 0px;
+	margin-top: 1px;
+	padding: 0px;
+	margin-left: -10px;
+
+	list-style: none;
+}
+.global__header-admin-submenu-item{
+	margin: 0px;
+	padding: 0.75em 2em;
+	padding-left: calc(1em + 10px);
+
+	text-align: left;
+
+	border-right: 1px solid #2c2c2c;
+	border-bottom: 1px solid #b2b2b2;
+	background-color: #bef574;
+}
+.global__header-admin-submenu-item:hover{
+	background-color: #9cc962;
+}
+.global__header-admin-submenu-item:last-child{
+	border-bottom: 1px solid #2c2c2c;
+}
+.global__header-admin-submenu-item-link{
+	display: block;
+
+	text-decoration: none;
 	color: #000000;
 }
 
@@ -55,6 +120,8 @@
 
 .global__nav{
 	grid-area: nav;
+
+	border-right: 1px solid #929292;
 }
 .global__nav-list{
 	display: flex;
@@ -107,10 +174,42 @@
 .global__footer{
 	grid-area: footer;
 
+	display: grid;
+	grid-template-areas: 'fleft fcontent frigth';
+	grid-template-columns: 1fr 4fr 1fr;
+	grid-template-rows: auto;
+
 	text-align: center;
 	font-family: Consolas;
 	font-style: italic;
 
-	background: #BEF574;
+	background: #bef574;
 	border-top: 1px solid #2c2c2c;
+}
+.global__footer-left{
+	grid-area: fleft;
+
+	background-color: #9cc962;
+}
+.global__footer-content{
+	grid-area: fcontent;
+
+	border-left: 1px solid #929292;
+	border-right: 1px solid #929292;
+}
+.global__footer-right{
+	grid-area: frigth;
+
+	background-color: #9cc962;
+}
+
+/* -------------------- marks -------------------- */ 
+
+.special__marks-good{
+	color: green;
+	background-color: rgba(0, 255, 0, 0.1);
+}
+.special__marks-bad{
+	color: red;
+	background-color: rgba(255, 0, 0, 0.1);
 }
