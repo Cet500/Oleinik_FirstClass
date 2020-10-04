@@ -1,0 +1,71 @@
+/* ------------------------------- child ------------------------------- */
+
+/* -------------------- sections -------------------- */ 
+
+.child__main-link{
+	text-decoration: underline;
+
+	color: #2d2d2d;
+}
+.child__section{
+	margin-bottom: 15px;
+
+	border-top-right-radius: 2em;
+
+	border: 1px solid #2c2c2c;
+	background-color: #e9ecbf;
+}
+.child__section-title{
+	margin: 0px;
+	padding: 5px 20px;
+
+	font-size: 1.15em;
+
+	border-top-right-radius: 2em;
+
+	background-color: #b8d68f;
+	border-bottom: 1px dashed #2d2d2d;
+}
+.child__section-text{
+	margin: 0px;
+	padding: 10px 20px;
+}
+.child__section-description-image{
+	display: block;
+
+	width: 100%;
+
+	margin: 0px auto;
+
+	border-bottom: 1px solid #929292;
+}
+.child__section-content{
+
+}
+.child__section-marks{
+
+}
+.child__section-marks-table{
+	margin: 10px 20px;
+
+	border-collapse: collapse;
+}
+.child__section-marks-table th{
+	padding: 4px 7px;
+
+	background-color: #b8d68f;
+	border: 1px solid #666666;	
+}
+.child__section-marks-table td{
+	padding: 3px 5px;
+
+	border: 1px solid #666666;
+}
+.child__section-marks-table td:first-child{
+	font-weight: bold;
+
+	background-color: #b8d68f;
+}
+.child__section-marks-table tr:hover{
+	background-color: rgba(156, 201, 98, 0.4);
+}
