@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Страница класса</title>
+		<link rel="stylesheet" href="css/global.css">
+		<link rel="stylesheet" href="css/lib/Chart.css">
+		<link rel="stylesheet" href="css/page-admin-statistic.css">
+		<script src="js/autoreload.js"></script>
+		<script src="js/lib/Chart.js"></script>
+	</head>
+
+	<body class="global__body">
+		<header class="global__header">
+			<div class="global__header-left"></div>
+
+			<h1 class="global__header-logo">Первый класс</h1>
+
+			<nav class="global__nav">
+				<ul class="global__nav-list">
+					<li class="global__nav-list-item">
+						<a href="news.html">Лента новостей</a>
+					</li>
+
+					<li class="global__nav-list-item">
+						<a href="class.html">Класс</a>
+					</li>
+
+					<li class="global__nav-list-item">
+						<a href="marks.html">Оценки</a>
+					</li>
+
+					<li class="global__nav-list-item">
+						<a href="photos.html">Фотки</a>
+					</li>
+				</ul>
+			</nav>
+
+			<div class="global__header-admin">
+				<ul class="global__header-admin-menu">
+					<li class="global__header-admin-menu-item">
+						<p class="global__header-admin-menu-item-text">Admin</p>
+						
+						<ul class="global__header-admin-submenu">
+							<li class="global__header-admin-submenu-item">
+								<a  class="global__header-admin-submenu-item-link" 
+									href="admin-panel.html">
+									Админ-панель
+								</a>
+							</li>
+							
+							<li class="global__header-admin-submenu-item">
+								<a  class="global__header-admin-submenu-item-link" 
+									href="admin-panel.html">
+									Редактор
+								</a>
+							</li>
+
+							<li class="global__header-admin-submenu-item">
+								<a  class="global__header-admin-submenu-item-link" 
+									href="admin-statistic.html">
+									Статистика
+								</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</header>
+
+		<main class="global__main admin-statistic__main">
+			<h2 class="global__main-header">Статистика</h2>
+
+			<h3 class="global__main-subheader">Сводная статистика за всё время</h3>
+
+			<section class="admin-statistic__section admin-statistic__section-half">
+				<div class="admin-statistic__section-header">
+					<h3 class="admin-statistic__section-header-title">
+						Статистика оценок класса
+					</h3>
+				</div>
+
+				<canvas id="marksPieChart" width="400" height="400"></canvas>
+			</section>
+
+			<section class="admin-statistic__section admin-statistic__section-half">
+				<div class="admin-statistic__section-header">
+					<h3 class="admin-statistic__section-header-title">
+						Статистика посещений класса
+					</h3>
+				</div>
+
+				<canvas id="visitsPieChart" width="400" height="400"></canvas>
+			</section>
+
+			<h3 class="global__main-subheader">Cтатистика по дням</h3>
+
+			<section class="admin-statistic__section">
+				<div class="admin-statistic__section-header">
+					<h3 class="admin-statistic__section-header-title">
+						Статистика посещений по дням
+					</h3>
+				</div>
+
+				<canvas id="visitsBarChart" width="1000" height="400"></canvas>
+			</section>
+		</main>
+
+		<footer class="global__footer">
+			<div class="global__footer-left"></div>
+
+			<div class="global__footer-content">
+				SergoIndustries<br>
+				29.09.2020
+			</div>
+
+			<div class="global__footer-right"></div>
+		</footer>
+
+		<script src="js/page-admin-statistic.js"></script>
+	</body>
+</html>

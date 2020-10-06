@@ -1,0 +1,38 @@
+/* ------------------------------- admin-statictic ------------------------------- */
+
+/* -------------------- main -------------------- */
+
+.admin-statictic__main{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+}
+
+/* -------------------- sections -------------------- */
+
+.admin-statistic__section{
+	display: inline-block;
+
+	margin: 10px;
+
+	border-top-right-radius: 2em;
+	border-bottom-left-radius: 2em;
+
+	border: 1px solid #2c2c2c;
+	background-color: #e9ecbf;
+}
+.admin-statistic__section-half{
+	width: calc(100% / 2 - 25px);
+}
+
+/* -------------------- section header -------------------- */
+
+.admin-statistic__section-header{
+	border-bottom: 1px dashed #2d2d2d;
+}
+.admin-statistic__section-header-title{
+	margin: 5px 20px;
+
+	font-size: 1.15em;
+}
