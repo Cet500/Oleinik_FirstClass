@@ -163,10 +163,18 @@
 	border-right: 1px solid #2d2d2d;
 }
 
-.global__main h2{
+.global__main h2,
+.global__main-header{
 	font-family: Consolas;
 	font-style: italic;
 	text-indent: 1em;
+}
+.global__main-subheader{
+	font-family: Consolas;
+	font-style: italic;
+	text-indent: 1em;
+
+	border-bottom: 1px dashed #2d2d2d;
 }
 
 /* -------------------- footer -------------------- */
