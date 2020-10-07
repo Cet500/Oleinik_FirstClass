@@ -33,6 +33,6 @@
 
 *Plans*
 
-- ( ) template of admin-panel
-- ( ) template of admin-editor
-- ( ) template of admin-statistic
+- [ ] template of admin-panel
+- [ ] template of admin-editor
+- [ ] template of admin-statistic
