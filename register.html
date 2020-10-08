@@ -4,6 +4,8 @@
 		<meta charset="UTF-8">
 		<title>Страница класса</title>
 		<link rel="stylesheet" href="css/global.css">
+		<link rel="stylesheet" href="css/lib/buttons.css">
+		<link rel="stylesheet" href="css/lib/forms.css">
 		<link rel="stylesheet" href="css/special/news.css">
 		<script src="js/autoreload.js"></script>
 	</head>
@@ -49,7 +51,7 @@
 							
 							<li class="global__header-admin-submenu-item">
 								<a  class="global__header-admin-submenu-item-link" 
-									href="admin-panel.html">
+									href="admin-editor.html">
 									Редактор
 								</a>
 							</li>
@@ -83,29 +85,27 @@
 		<main class="global__main">
 			<h2>Регистрация аккаунта</h2>
 
-
-
-			<div class="global__modal-form">
-				<div class="global__modal-form-header">
-					<h3 class="global__modal-form-header-title">Регистрация аккаунта</h3>
+			<div class="forms__modal-form">
+				<div class="forms__modal-form-header">
+					<h3 class="forms__modal-form-header-title">Регистрация аккаунта</h3>
 				</div>
 
-				<div class="global__modal-form-content">
+				<div class="forms__modal-form-content">
 					<form name="register_form">
-						<input class="global__input-text" type="text" name="register_form_name" placeholder="Введите имя...">
+						<input class="forms__input-text" type="text" name="register_form_name" placeholder="Введите имя...">
 
-						<input class="global__input-text" type="text" name="register_form_nick" placeholder="Введите ник...">
+						<input class="forms__input-text" type="text" name="register_form_nick" placeholder="Введите ник...">
 
-						<input class="global__input-text" type="email" name="register_form_email" placeholder="Введите почту...">
+						<input class="forms__input-text" type="email" name="register_form_email" placeholder="Введите почту...">
 
-						<input class="global__input-text" type="password" name="register_form_pass" placeholder="••••••••••••">
+						<input class="forms__input-text" type="password" name="register_form_pass" placeholder="••••••••••••">
 
-						<input class="global__input-text" type="password" name="register_form_pass_too" placeholder="••••••••••••">
+						<input class="forms__input-text" type="password" name="register_form_pass_too" placeholder="••••••••••••">
 					</form>
 				</div>
 
-				<div class="global__modal-form-footer">
-					
+				<div class="forms__modal-form-buttons">
+					<button class="btn btn-rounded btn-mc btn-green">зарегистрироваться</button>
 				</div>
 			</div>
 		</main>
