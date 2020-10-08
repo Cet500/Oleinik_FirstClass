@@ -46,3 +46,5 @@
 - add telplate of register
 - update exists templates
 - rename and move a css
+- add new charts, and update old
+- add new libs
