@@ -35,4 +35,14 @@
 
 - [ ] template of admin-panel
 - [ ] template of admin-editor
-- [ ] template of admin-statistic
+- [X] template of admin-statistic
+
+## 08.10.2020
+
+*Sergo*
+
+- update a global template
+- add template of login
+- add telplate of register
+- update exists templates
+- rename and move a css
