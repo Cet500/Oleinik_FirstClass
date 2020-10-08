@@ -22,8 +22,11 @@
 	border: 1px solid #2c2c2c;
 	background-color: #e9ecbf;
 }
+.admin-statistic__section-full{
+	width: calc(100% - 22px);
+}
 .admin-statistic__section-half{
-	width: calc(100% / 2 - 25px);
+	width: calc(100% / 3 - 25px);
 }
 
 /* -------------------- section header -------------------- */
@@ -35,4 +38,22 @@
 	margin: 5px 20px;
 
 	font-size: 1.15em;
+}
+
+/* -------------------- charts -------------------- */
+
+#marksPieChart{
+	width: 100%;
+}
+#visitsPieChart{
+	width: 100%;
+}
+#statusesPieChart{
+	width: 100%;
+}
+#visitsLineChart{
+	width: 100%;
+}
+#marksLineChart{
+	width: 100%;
 }
