@@ -221,3 +221,82 @@
 	color: red;
 	background-color: rgba(255, 0, 0, 0.1);
 }
+
+/* -------------------- modal form -------------------- */
+
+.global__modal-form{
+	width: 40%;
+
+	margin: 0px auto;
+
+	border-top-right-radius: 2em;
+	border-bottom-left-radius: 2em;
+
+	background-color: #e9ecbf;
+	border: 1px solid #2c2c2c;
+}
+
+/* -------------------- modal form header -------------------- */
+
+.global__modal-form-header{
+	display: grid;
+
+	text-align: center;
+
+	border-top-right-radius: 2em;
+
+	background-color: #b8d68f;
+	border-bottom: 1px dashed #2d2d2d;
+}
+.global__modal-form-header-title{
+	margin: 5px 20px;
+
+	font-size: 1.15em;
+}
+
+/* -------------------- modal form content -------------------- */
+
+.global__modal-form-content{
+
+}
+.global__modal-form-content-form{
+
+}
+
+/* -------------------- modal form buttons -------------------- */
+
+.global__modal-form-buttons{
+	border-bottom-left-radius: 2em;
+
+	background-color: #b8d68f;
+	border-top: 1px dashed #2d2d2d;
+}
+
+/* -------------------- inputs -------------------- */
+
+.global__input-text{
+	display: block;
+
+	width: 60%;
+
+	padding: 3px 6px;
+	margin: 10px;
+	margin-left: auto;
+	margin-right: auto;
+
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+
+	font-family: Arial;
+	font-size: 1em;
+
+	border: 1px solid #2c2c2c;
+}
+.global__input-text:placeholder{
+	color: #929292;
+}
+.global__input-text:focus{
+	outline: none;
+
+	border: 2px solid #bef574;
+}

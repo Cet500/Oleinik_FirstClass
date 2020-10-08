@@ -11,12 +11,16 @@
 	background-color: #e9ecbf;
 }
 .marks__section h3{
-	margin-top: 7px;
+	margin: 0px;
 	margin-bottom: 15px;
+	padding-top: 7px;
 	padding-left: 25px;
 	padding-bottom: 5px;
 
+	border-top-right-radius: 2em;
 	border-bottom: 1px dashed #2d2d2d;
+
+	background-color: #b8d68f;
 }
 .marks__section-table{
 	margin: 10px;

@@ -23,7 +23,10 @@
 	grid-template-columns: 4fr 2fr;
 	grid-template-rows: auto;
 
+	border-top-right-radius: 2em;
 	border-bottom: 1px dashed #2d2d2d;
+
+	background-color: #b8d68f;
 }
 .news__section-header-title{
 	grid-area: sect_head_title;
