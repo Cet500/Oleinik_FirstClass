@@ -173,6 +173,7 @@
 	font-family: Consolas;
 	font-style: italic;
 	text-indent: 1em;
+	font-size: 1.25em;
 
 	border-bottom: 1px dashed #2d2d2d;
 }
@@ -220,4 +221,13 @@
 .special__marks-bad{
 	color: red;
 	background-color: rgba(255, 0, 0, 0.1);
+}
+
+/* -------------------- wraps -------------------- */ 
+
+.special__wraps-wrap{
+	white-space: pre-line;
+}
+.special__wraps-nowrap{
+	white-space: nowrap;
 }
