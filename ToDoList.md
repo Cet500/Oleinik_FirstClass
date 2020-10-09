@@ -33,7 +33,7 @@
 
 *Plans*
 
-- [ ] template of admin-panel
+- [X] template of admin-panel
 - [ ] template of admin-editor
 - [X] template of admin-statistic
 
@@ -48,3 +48,27 @@
 - rename and move a css
 - add new charts, and update old
 - add new libs
+
+## 09.10.2020
+
+*Project*
+
+- add LICENSE, type - MIT
+
+*Sergo*
+
+- update a global css
+- add template for admin-panel
+- update css
+- add new script
+- add jquery
+- fixed a some bugs
+
+*Plans*
+
+- [ ] template of admin-panel-edit
+- [ ] scheme of DB
+- [ ] documentation
+- [ ] solution problem of single system
+- [ ] solution about general scripts and links
+- [ ] single statics code and resorses, for example, single header
