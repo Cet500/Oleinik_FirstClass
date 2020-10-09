@@ -44,10 +44,10 @@
 /* -------------------- modal form buttons -------------------- */
 
 .forms__modal-form-buttons{
-	border-bottom-left-radius: 2em;
-
 	padding-left: 10px;
 	padding-right: 10px;
+
+	border-bottom-left-radius: 2em;
 
 	text-align: right;
 
