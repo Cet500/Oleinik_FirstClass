@@ -4,7 +4,9 @@
 		<meta charset="UTF-8">
 		<title>Страница класса</title>
 		<link rel="stylesheet" href="css/global.css">
+		<link rel="stylesheet" href="css/lib/buttons.css">
 		<link rel="stylesheet" href="css/admin/panel.css">
+		<script src="js/external/jquery-3.5.1.min.js"></script>
 		<script src="js/autoreload.js"></script>
 	</head>
 
@@ -80,10 +82,289 @@
 			</div>
 		</header>
 
-		<main class="global__main">
+		<main class="global__main admin-panel__main">
 			<h2>Админ-панель</h2>
 
-			
+			<h3 class="global__main-subheader">Сводные таблицы классов</h3>
+
+			<section class="admin-panel__section">
+				<div class="admin-panel__section-header script__collapse-trigger">
+					<h4 class="admin-panel__section-header-title">
+						Сводная таблица учеников 1A
+					</h4>
+				</div>
+
+				<div class="admin-editor__section-content script__collapse-block">
+					<table class="admin-panel__table-students">
+						<thead>
+							<tr>
+								<th>ФИО</th>
+								<th>Дата рожд.</th>
+								<th>Телефон</th>
+								<th>Адрес</th>
+								<th>Статус</th>
+								<th>Мама</th>
+								<th>Тел. мамы</th>
+								<th>Работа мамы</th>
+								<th>Папа</th>
+								<th>Тел. папы</th>
+								<th>Работа папы</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td class="special__wraps-wrap">Колобков Коловок Колобкович</td>
+								<td>19.09.2009</td>
+								<td>8 (800) 555-35-35</td>
+								<td>г. Москва, <wbr>ул. Пушкина, 14</td>
+								<td>Отличник</td>
+								<td class="special__wraps-wrap">Колобкова Печка Кирпичкина</td>
+								<td>8 (900) 123-45-67</td>
+								<td class="special__wraps-wrap">Учитель русского в школе 42</td>
+								<td class="special__wraps-wrap">Колобков Уголь Древесин</td>
+								<td>8 (900) 764-43-21</td>
+								<td class="special__wraps-wrap">Учитель труда в школе 42</td>
+							</tr>
+
+							<tr>
+								<td class="special__wraps-wrap">Колобков Коловок Колобкович</td>
+								<td>19.09.2009</td>
+								<td>8 (800) 555-35-35</td>
+								<td>г. Москва, <wbr>ул. Пушкина, 14</td>
+								<td>Отличник</td>
+								<td class="special__wraps-wrap">Колобкова Печка Кирпичкина</td>
+								<td>8 (900) 123-45-67</td>
+								<td class="special__wraps-wrap">Учитель русского в школе 42</td>
+								<td class="special__wraps-wrap">Колобков Уголь Древесин</td>
+								<td>8 (900) 764-43-21</td>
+								<td class="special__wraps-wrap">Учитель труда в школе 42</td>
+							</tr>
+
+							<tr>
+								<td class="special__wraps-wrap">Колобков Коловок Колобкович</td>
+								<td>19.09.2009</td>
+								<td>8 (800) 555-35-35</td>
+								<td>г. Москва, <wbr>ул. Пушкина, 14</td>
+								<td>Отличник</td>
+								<td class="special__wraps-wrap">Колобкова Печка Кирпичкина</td>
+								<td>8 (900) 123-45-67</td>
+								<td class="special__wraps-wrap">Учитель русского в школе 42</td>
+								<td class="special__wraps-wrap">Колобков Уголь Древесин</td>
+								<td>8 (900) 764-43-21</td>
+								<td class="special__wraps-wrap">Учитель труда в школе 42</td>
+							</tr>
+
+							<tr>
+								<td class="special__wraps-wrap">Колобков Коловок Колобкович</td>
+								<td>19.09.2009</td>
+								<td>8 (800) 555-35-35</td>
+								<td>г. Москва, <wbr>ул. Пушкина, 14</td>
+								<td>Отличник</td>
+								<td class="special__wraps-wrap">Колобкова Печка Кирпичкина</td>
+								<td>8 (900) 123-45-67</td>
+								<td class="special__wraps-wrap">Учитель русского в школе 42</td>
+								<td class="special__wraps-wrap">Колобков Уголь Древесин</td>
+								<td>8 (900) 764-43-21</td>
+								<td class="special__wraps-wrap">Учитель труда в школе 42</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<div class="admin-editor__section-buttons">
+					<a class="btn btn-sm btn-rounded btn-green"
+					   href="admin-panel-edit.html">
+						Изменить
+					</a>
+				</div>
+			</section>
+
+			<section class="admin-panel__section">
+				<div class="admin-panel__section-header script__collapse-trigger">
+					<h4 class="admin-panel__section-header-title">
+						Сводная таблица учеников 1Б
+					</h4>
+				</div>
+
+				<div class="admin-editor__section-content script__collapse-block">
+					<table class="admin-panel__table-students">
+						<thead>
+							<tr>
+								<th>ФИО</th>
+								<th>Дата рожд.</th>
+								<th>Телефон</th>
+								<th>Адрес</th>
+								<th>Статус</th>
+								<th>Мама</th>
+								<th>Тел. мамы</th>
+								<th>Работа мамы</th>
+								<th>Папа</th>
+								<th>Тел. папы</th>
+								<th>Работа папы</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td class="special__wraps-wrap">Колобков Коловок Колобкович</td>
+								<td>19.09.2009</td>
+								<td>8 (800) 555-35-35</td>
+								<td>г. Москва, <wbr>ул. Пушкина, 14</td>
+								<td>Отличник</td>
+								<td class="special__wraps-wrap">Колобкова Печка Кирпичкина</td>
+								<td>8 (900) 123-45-67</td>
+								<td class="special__wraps-wrap">Учитель русского в школе 42</td>
+								<td class="special__wraps-wrap">Колобков Уголь Древесин</td>
+								<td>8 (900) 764-43-21</td>
+								<td class="special__wraps-wrap">Учитель труда в школе 42</td>
+							</tr>
+
+							<tr>
+								<td class="special__wraps-wrap">Колобков Коловок Колобкович</td>
+								<td>19.09.2009</td>
+								<td>8 (800) 555-35-35</td>
+								<td>г. Москва, <wbr>ул. Пушкина, 14</td>
+								<td>Отличник</td>
+								<td class="special__wraps-wrap">Колобкова Печка Кирпичкина</td>
+								<td>8 (900) 123-45-67</td>
+								<td class="special__wraps-wrap">Учитель русского в школе 42</td>
+								<td class="special__wraps-wrap">Колобков Уголь Древесин</td>
+								<td>8 (900) 764-43-21</td>
+								<td class="special__wraps-wrap">Учитель труда в школе 42</td>
+							</tr>
+
+							<tr>
+								<td class="special__wraps-wrap">Колобков Коловок Колобкович</td>
+								<td>19.09.2009</td>
+								<td>8 (800) 555-35-35</td>
+								<td>г. Москва, <wbr>ул. Пушкина, 14</td>
+								<td>Отличник</td>
+								<td class="special__wraps-wrap">Колобкова Печка Кирпичкина</td>
+								<td>8 (900) 123-45-67</td>
+								<td class="special__wraps-wrap">Учитель русского в школе 42</td>
+								<td class="special__wraps-wrap">Колобков Уголь Древесин</td>
+								<td>8 (900) 764-43-21</td>
+								<td class="special__wraps-wrap">Учитель труда в школе 42</td>
+							</tr>
+
+							<tr>
+								<td class="special__wraps-wrap">Колобков Коловок Колобкович</td>
+								<td>19.09.2009</td>
+								<td>8 (800) 555-35-35</td>
+								<td>г. Москва, <wbr>ул. Пушкина, 14</td>
+								<td>Отличник</td>
+								<td class="special__wraps-wrap">Колобкова Печка Кирпичкина</td>
+								<td>8 (900) 123-45-67</td>
+								<td class="special__wraps-wrap">Учитель русского в школе 42</td>
+								<td class="special__wraps-wrap">Колобков Уголь Древесин</td>
+								<td>8 (900) 764-43-21</td>
+								<td class="special__wraps-wrap">Учитель труда в школе 42</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<div class="admin-editor__section-buttons">
+					<a class="btn btn-sm btn-rounded btn-green"
+					   href="admin-panel-edit.html">
+						Изменить
+					</a>
+				</div>
+			</section>
+
+			<section class="admin-panel__section">
+				<div class="admin-panel__section-header script__collapse-trigger">
+					<h4 class="admin-panel__section-header-title">
+						Сводная таблица учеников 1В
+					</h4>
+				</div>
+
+				<div class="admin-editor__section-content script__collapse-block">
+					<table class="admin-panel__table-students">
+						<thead>
+							<tr>
+								<th>ФИО</th>
+								<th>Дата рожд.</th>
+								<th>Телефон</th>
+								<th>Адрес</th>
+								<th>Статус</th>
+								<th>Мама</th>
+								<th>Тел. мамы</th>
+								<th>Работа мамы</th>
+								<th>Папа</th>
+								<th>Тел. папы</th>
+								<th>Работа папы</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td class="special__wraps-wrap">Колобков Коловок Колобкович</td>
+								<td>19.09.2009</td>
+								<td>8 (800) 555-35-35</td>
+								<td>г. Москва, <wbr>ул. Пушкина, 14</td>
+								<td>Отличник</td>
+								<td class="special__wraps-wrap">Колобкова Печка Кирпичкина</td>
+								<td>8 (900) 123-45-67</td>
+								<td class="special__wraps-wrap">Учитель русского в школе 42</td>
+								<td class="special__wraps-wrap">Колобков Уголь Древесин</td>
+								<td>8 (900) 764-43-21</td>
+								<td class="special__wraps-wrap">Учитель труда в школе 42</td>
+							</tr>
+
+							<tr>
+								<td class="special__wraps-wrap">Колобков Коловок Колобкович</td>
+								<td>19.09.2009</td>
+								<td>8 (800) 555-35-35</td>
+								<td>г. Москва, <wbr>ул. Пушкина, 14</td>
+								<td>Отличник</td>
+								<td class="special__wraps-wrap">Колобкова Печка Кирпичкина</td>
+								<td>8 (900) 123-45-67</td>
+								<td class="special__wraps-wrap">Учитель русского в школе 42</td>
+								<td class="special__wraps-wrap">Колобков Уголь Древесин</td>
+								<td>8 (900) 764-43-21</td>
+								<td class="special__wraps-wrap">Учитель труда в школе 42</td>
+							</tr>
+
+							<tr>
+								<td class="special__wraps-wrap">Колобков Коловок Колобкович</td>
+								<td>19.09.2009</td>
+								<td>8 (800) 555-35-35</td>
+								<td>г. Москва, <wbr>ул. Пушкина, 14</td>
+								<td>Отличник</td>
+								<td class="special__wraps-wrap">Колобкова Печка Кирпичкина</td>
+								<td>8 (900) 123-45-67</td>
+								<td class="special__wraps-wrap">Учитель русского в школе 42</td>
+								<td class="special__wraps-wrap">Колобков Уголь Древесин</td>
+								<td>8 (900) 764-43-21</td>
+								<td class="special__wraps-wrap">Учитель труда в школе 42</td>
+							</tr>
+
+							<tr>
+								<td class="special__wraps-wrap">Колобков Коловок Колобкович</td>
+								<td>19.09.2009</td>
+								<td>8 (800) 555-35-35</td>
+								<td>г. Москва, <wbr>ул. Пушкина, 14</td>
+								<td>Отличник</td>
+								<td class="special__wraps-wrap">Колобкова Печка Кирпичкина</td>
+								<td>8 (900) 123-45-67</td>
+								<td class="special__wraps-wrap">Учитель русского в школе 42</td>
+								<td class="special__wraps-wrap">Колобков Уголь Древесин</td>
+								<td>8 (900) 764-43-21</td>
+								<td class="special__wraps-wrap">Учитель труда в школе 42</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<div class="admin-editor__section-buttons">
+					<a class="btn btn-sm btn-rounded btn-green"
+					   href="admin-panel-edit.html">
+						Изменить
+					</a>
+				</div>
+			</section>
 		</main>
 
 		<footer class="global__footer">
@@ -96,5 +377,7 @@
 
 			<div class="global__footer-right"></div>
 		</footer>
+
+		<script src="js/collapse.js"></script>
 	</body>
 </html>

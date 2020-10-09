@@ -32,7 +32,12 @@
 /* -------------------- section header -------------------- */
 
 .admin-statistic__section-header{
+	display: grid;
+
+	border-top-right-radius: 2em;
+
 	border-bottom: 1px dashed #2d2d2d;
+	background-color: #b8d68f;
 }
 .admin-statistic__section-header-title{
 	margin: 5px 20px;
