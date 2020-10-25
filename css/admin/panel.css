@@ -36,7 +36,7 @@
 
 /* -------------------- sections content -------------------- */
 
-.admin-editor__section-content{
+.admin-panel__section-content{
 	white-space: nowrap;
 
 	overflow-x: auto;
@@ -44,7 +44,7 @@
 
 /* -------------------- sections buttons -------------------- */
 
-.admin-editor__section-buttons{
+.admin-panel__section-buttons{
 	padding-left: 10px;
 	padding-right: 10px;
 
@@ -55,7 +55,7 @@
 	border-top: 1px dashed #2d2d2d;
 	background-color: #b8d68f;
 }
-.admin-editor__section-buttons a{
+.admin-panel__section-buttons a{
 	display: inline-block;
 
 	text-decoration: none;
@@ -74,14 +74,14 @@
 	padding: 4px 7px;
 
 	background-color: #b8d68f;
-	border: 1px solid #666666;
+	border: 1px solid #999999;
 }
 .admin-panel__table-students td{
 	padding: 4px 5px;
 
 	font-size: 0.95em;
 
-	border: 1px solid #666666;
+	border: 1px solid #b6b89d;
 }
 .admin-panel__table-students tbody tr:hover{
 	background-color: rgba(156, 201, 98, 0.4);
