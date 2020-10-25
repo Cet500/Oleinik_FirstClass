@@ -66,9 +66,20 @@
 
 *Plans*
 
-- [ ] template of admin-panel-edit
+- [X] template of admin-panel-edit
 - [ ] scheme of DB
 - [ ] documentation
 - [ ] solution problem of single system
 - [ ] solution about general scripts and links
 - [ ] single statics code and resorses, for example, single header
+
+## 25.10.2020
+
+*Sergo*
+
+- fix lib buttons.css
+- create template of page admin-panel-edit
+- create multi-level table
+- update global.css
+- add external lib - datatable
+- update telplate of page admin-panel
