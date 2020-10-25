@@ -1,0 +1,152 @@
+/* ------------------------------- admin-panel ------------------------------- */
+
+/* -------------------- sections -------------------- */
+
+.admin-panel-edit__section{
+	margin-bottom: 15px;
+
+	border-top-right-radius: 2em;
+	border-bottom-left-radius: 2em;
+
+	border: 1px solid #2c2c2c;
+	background-color: #e9ecbf;
+}
+
+/* -------------------- sections header -------------------- */
+
+.admin-panel-edit__section-header{
+	display: grid;
+
+	border-top-right-radius: 2em;
+
+	border-bottom: 1px dashed #2d2d2d;
+	background-color: #b8d68f;
+}
+.admin-panel-edit__section-header-title{
+	margin: 5px 20px;
+
+	font-size: 1.05em;
+}
+
+/* -------------------- sections content -------------------- */
+
+.admin-panel-edit__section-content{
+	white-space: nowrap;
+
+	overflow-x: auto;
+}
+
+/* -------------------- sections buttons -------------------- */
+
+.admin-panel-edit__section-buttons{
+	padding-left: 10px;
+	padding-right: 10px;
+
+	border-bottom-left-radius: 2em;
+
+	text-align: right;
+
+	border-top: 1px dashed #2d2d2d;
+	background-color: #b8d68f;
+}
+.admin-panel-edit__section-buttons a{
+	display: inline-block;
+
+	text-decoration: none;
+}
+
+/* -------------------- table -------------------- */
+
+/*.admin-panel-edit__table{
+	display: inline-block;
+
+	margin: 10px 20px;
+
+	border-collapse: collapse;
+}
+.admin-panel-edit__table th{
+	padding: 4px 7px;
+
+	background-color: #b8d68f;
+	border-top: 1px solid #999999;
+}
+.admin-panel-edit__table td{
+	padding: 4px 5px;
+
+	font-size: 0.95em;
+	font-weight: 400;
+
+	border-top: 1px solid #b6b89d;
+}
+.admin-panel-edit__table tbody tr:hover{
+	background-color: rgba(156, 201, 98, 0.4);
+} */
+
+
+
+.admin-panel-edit__table {
+	display: inline-block;
+	margin: 10px 20px;
+	border-collapse: collapse;
+	table-layout: fixed;
+	border-top: 1px solid #abad8e;
+	border-left: 3px solid #abad8e;
+	border-right: 1px solid #abad8e;
+}
+.admin-panel-edit__table > tbody > tr:hover{
+	background-color: rgba(156, 201, 98, 0.3);
+}
+.admin-panel-edit__table > tbody > tr:last-child .node{
+	padding: 0px !important;
+}
+.admin-panel-edit__table td {
+	border-bottom: 1px solid #abad8e;
+}
+
+.admin-panel-edit__subtable {
+	border-collapse: collapse;
+	margin-left: 30px;
+	border-left: 3px solid #abad8e;	
+}
+.admin-panel-edit__subtable tr:last-child {
+	border-bottom: 3px solid #abad8e;
+}
+.admin-panel-edit__subtable td {
+	border-bottom: 1px solid #abad8e;
+}
+
+.admin-panel-edit__table td{
+	padding: 3px 6px;
+}
+.admin-panel-edit__table th {
+	padding: 4px 7px;
+	background-color: rgba(184, 214, 143, 0.8);
+	border-bottom: 1px solid #abad8e
+}
+
+.admin-panel-edit__table input{
+	display: none;
+}
+.admin-panel-edit__table input + a {
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAALCAIAAAAmzuBxAAAACXBIWXMAAAsSAAALEgHS3X78AAAAkElEQVQYlXWOvRWDQAyDv/DYK2wQSro8OkpGuRFcUjJCRmEE0TldCpsjPy9qzj7Jki62Pgh4vnqbbbEWuN+use/PlArwHccWGg780psENGFY6W4YgxZIAM339WmT3m397YYxxn6aASslFfVotYLTT3NwcuTKlFpNR2sdEak4acdKeafPlE2SZ7sw/1BEtX94AXYTVmyR94mPAAAAAElFTkSuQmCC)
+	no-repeat 0px 4px;
+}
+.admin-panel-edit__table input:checked + a {
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAALCAIAAAAmzuBxAAAACXBIWXMAAAsSAAALEgHS3X78AAAAeklEQVQYlX2PsRGDMAxFX3zeK9mAlHRcupSM4hFUUjJCRpI70VHIJr7D8BtJ977+SQ9Zf7isVG16WSQC0/D0OW/FqoBlDFkIVJ2xAhA8sI/NHbcYiFrPfI0fGklKagDx2F4ltdtaM0J9L3dxcVxi+zv62E+MwPs7c60dClRP6iug7wUAAAAASUVORK5CYII=)
+	no-repeat 0px 4px;
+}
+.admin-panel-edit__table label a {
+	cursor: pointer;
+	padding-left: 16px;
+}
+.admin-panel-edit__table input ~ table {
+	display: none;
+}
+.admin-panel-edit__table input:checked ~ table {
+	display: table;
+}
+
+.admin-panel-edit__table .node {
+	padding: 0px 0px 10px 0px;
+	border-bottom: 0px !important;
+}

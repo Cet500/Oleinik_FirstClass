@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Страница класса</title>
+		<link rel="stylesheet" href="css/global.css">
+		<link rel="stylesheet" href="css/lib/buttons.css">
+		<link rel="stylesheet" href="css/admin/panel-edit.css">
+		<script src="js/external/jquery-3.5.1.min.js"></script>
+		<script src="js/autoreload.js"></script>
+	</head>
+
+	<body class="global__body">
+		<header class="global__header">
+			<div class="global__header-left"></div>
+
+			<h1 class="global__header-logo">Первый класс</h1>
+
+			<nav class="global__nav">
+				<ul class="global__nav-list">
+					<li class="global__nav-list-item">
+						<a href="news.html">Лента новостей</a>
+					</li>
+
+					<li class="global__nav-list-item">
+						<a href="class.html">Класс</a>
+					</li>
+
+					<li class="global__nav-list-item">
+						<a href="marks.html">Оценки</a>
+					</li>
+
+					<li class="global__nav-list-item">
+						<a href="photos.html">Фотки</a>
+					</li>
+				</ul>
+			</nav>
+
+			<div class="global__header-admin">
+				<ul class="global__header-admin-menu">
+					<li class="global__header-admin-menu-item">
+						<p class="global__header-admin-menu-item-text">Admin</p>
+						
+						<ul class="global__header-admin-submenu">
+							<li class="global__header-admin-submenu-item">
+								<a  class="global__header-admin-submenu-item-link" 
+									href="admin-panel.html">
+									Админ-панель
+								</a>
+							</li>
+							
+							<li class="global__header-admin-submenu-item">
+								<a  class="global__header-admin-submenu-item-link" 
+									href="admin-editor.html">
+									Редактор
+								</a>
+							</li>
+
+							<li class="global__header-admin-submenu-item">
+								<a  class="global__header-admin-submenu-item-link" 
+									href="admin-statistic.html">
+									Статистика
+								</a>
+							</li>
+
+							<li class="global__header-admin-submenu-item">
+								<a  class="global__header-admin-submenu-item-link" 
+									href="login.html">
+									Вход в аккаунт
+								</a>
+							</li>
+
+							<li class="global__header-admin-submenu-item">
+								<a  class="global__header-admin-submenu-item-link" 
+									href="register.html">
+									Регистрация аккаунта
+								</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</header>
+
+		<main class="global__main admin-panel__main">
+			<h2><h2><a class="global__main-link" href="admin-panel.html">Админ-панель</a> / Изменение 1А класса</h2>
+
+			<section class="admin-panel-edit__section">
+				<div class="admin-panel-edit__section-header">
+					<h4 class="admin-panel-edit__section-header-title">
+						Редактирование данных учеников 1A класса
+					</h4>
+				</div>
+
+				<div class="admin-panel-edit__section-content">
+					<table id="MyTable" class="admin-panel-edit__table">
+						<tr>
+							<th></th>
+							<th>Фамилия</th>
+							<th>Имя</th>
+							<th>Отчество</th>
+							<th>Дата рожд.</th>
+							<th>Телефон</th>
+							<th>Адрес</th>
+							<th>Статус</th>
+						</tr>
+
+						<tr>
+							<td>
+								<label>
+									<input type="checkbox">
+									<a onclick="sh(this)"></a>
+								</label>
+							</td>
+							<td contenteditable="true">Иванов</td>
+							<td contenteditable="true">Иван</td>
+							<td contenteditable="true">Иваныч</td>
+							<td contenteditable="true">19.09.2009</td>
+							<td contenteditable="true">8 (800) 555-35-35</td>
+							<td contenteditable="true">г. Москва, <wbr>ул. Пушкина, 14</td>
+							<td contenteditable="true">Отличник</td>
+						</tr>
+						<tr>
+							<td colspan="8" class="node">
+								<input type="checkbox">
+
+								<table class="admin-panel-edit__subtable">
+									<tr>
+										<th>Фамилия мамы</th>
+										<th>Имя мамы</th>
+										<th>Отчество мамы</th>
+										<th>Тел. мамы</th>
+										<th>Работа мамы</th>
+									</tr>
+
+									<tr>
+										<td contenteditable="true">Иванова</td>
+										<td contenteditable="true">Екатерина</td>
+										<td contenteditable="true">Андреевна</td>
+										<td contenteditable="true">8 (900) 123-45-67</td>
+										<td contenteditable="true">Учитель русского в школе 42</td>
+									</tr>
+
+									<tr>
+										<th>Фамилия папы</th>
+										<th>Имя папы</th>
+										<th>Отчество папы</th>
+										<th>Тел. папы</th>
+										<th>Работа папы</th>
+									</tr>
+
+									<tr>
+										<td contenteditable="true">Иванов</td>
+										<td contenteditable="true">Иван</td>
+										<td contenteditable="true">Алексеевич</td>
+										<td contenteditable="true">8 (900) 764-43-21</td>
+										<td contenteditable="true">Учитель труда в школе 42</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+
+
+						<tr>
+							<td>
+								<label>
+									<input type="checkbox">
+									<a onclick="sh(this)"></a>
+								</label>
+							</td>
+							<td contenteditable="true">Иванов</td>
+							<td contenteditable="true">Иван</td>
+							<td contenteditable="true">Иваныч</td>
+							<td contenteditable="true">19.09.2009</td>
+							<td contenteditable="true">8 (800) 555-35-35</td>
+							<td contenteditable="true">г. Москва, <wbr>ул. Пушкина, 14</td>
+							<td contenteditable="true">Отличник</td>
+						</tr>
+						<tr>
+							<td colspan="8" class="node">
+								<input type="checkbox">
+
+								<table class="admin-panel-edit__subtable">
+									<tr>
+										<th>Фамилия мамы</th>
+										<th>Имя мамы</th>
+										<th>Отчество мамы</th>
+										<th>Тел. мамы</th>
+										<th>Работа мамы</th>
+									</tr>
+
+									<tr>
+										<td contenteditable="true">Иванова</td>
+										<td contenteditable="true">Екатерина</td>
+										<td contenteditable="true">Андреевна</td>
+										<td contenteditable="true">8 (900) 123-45-67</td>
+										<td contenteditable="true">Учитель русского в школе 42</td>
+									</tr>
+
+									<tr>
+										<th>Фамилия папы</th>
+										<th>Имя папы</th>
+										<th>Отчество папы</th>
+										<th>Тел. папы</th>
+										<th>Работа папы</th>
+									</tr>
+
+									<tr>
+										<td contenteditable="true">Иванов</td>
+										<td contenteditable="true">Иван</td>
+										<td contenteditable="true">Алексеевич</td>
+										<td contenteditable="true">8 (900) 764-43-21</td>
+										<td contenteditable="true">Учитель труда в школе 42</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<label>
+									<input type="checkbox">
+									<a onclick="sh(this)"></a>
+								</label>
+							</td>
+							<td contenteditable="true">Иванов</td>
+							<td contenteditable="true">Иван</td>
+							<td contenteditable="true">Иваныч</td>
+							<td contenteditable="true">19.09.2009</td>
+							<td contenteditable="true">8 (800) 555-35-35</td>
+							<td contenteditable="true">г. Москва, <wbr>ул. Пушкина, 14</td>
+							<td contenteditable="true">Отличник</td>
+						</tr>
+						<tr>
+							<td colspan="8" class="node">
+								<input type="checkbox">
+
+								<table class="admin-panel-edit__subtable">
+									<tr>
+										<th>Фамилия мамы</th>
+										<th>Имя мамы</th>
+										<th>Отчество мамы</th>
+										<th>Тел. мамы</th>
+										<th>Работа мамы</th>
+									</tr>
+
+									<tr>
+										<td contenteditable="true">Иванова</td>
+										<td contenteditable="true">Екатерина</td>
+										<td contenteditable="true">Андреевна</td>
+										<td contenteditable="true">8 (900) 123-45-67</td>
+										<td contenteditable="true">Учитель русского в школе 42</td>
+									</tr>
+
+									<tr>
+										<th>Фамилия папы</th>
+										<th>Имя папы</th>
+										<th>Отчество папы</th>
+										<th>Тел. папы</th>
+										<th>Работа папы</th>
+									</tr>
+
+									<tr>
+										<td contenteditable="true">Иванов</td>
+										<td contenteditable="true">Иван</td>
+										<td contenteditable="true">Алексеевич</td>
+										<td contenteditable="true">8 (900) 764-43-21</td>
+										<td contenteditable="true">Учитель труда в школе 42</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+
+					<script>
+						function sh(el) {
+							var row = el.parentNode.parentNode.parentNode;
+							var nextRow = row.parentNode.rows[row.rowIndex + 1];
+							var chk = nextRow.querySelector('td > input');
+							chk.checked = !chk.checked;
+						}
+						
+						function SwapAll(b) {
+							var tbl = document.getElementById('MyTable');
+							var chks = tbl.getElementsByTagName('input');
+							for (var i=0; i<chks.length; i++) {
+								chks[i].checked = b;
+							}
+						}
+					</script>
+				</div>
+
+				<div class="admin-panel-edit__section-buttons">
+					<button class="btn btn-sm btn-rounded btn-default"
+							onclick="SwapAll(false)">
+						Cвернуть всё
+					</button>
+
+					<button class="btn btn-sm btn-rounded btn-default"
+							onclick="SwapAll(true)">
+						Развернуть всё
+					</button>
+
+					<button class="btn btn-sm btn-rounded btn-green">
+						Сохранить
+					</button>
+				</div>
+			</section>
+		</main>
+
+		<footer class="global__footer">
+			<div class="global__footer-left"></div>
+
+			<div class="global__footer-content">
+				SergoIndustries<br>
+				29.09.2020
+			</div>
+
+			<div class="global__footer-right"></div>
+		</footer>
+
+		<script src="js/collapse.js"></script>
+	</body>
+</html>
